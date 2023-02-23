@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Oswald:wght@200;300;400;500;600;700&family=Share+Tech&display=swap');
+
+html, body {
+    
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body {
+    overflow-x: clip;
+}
+
+* {
+    font-family: 'Oswald', sans-serif;
+    color: #CBCBCB;
+}

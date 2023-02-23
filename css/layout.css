@@ -1,0 +1,213 @@
+
+/*---.________.-------------------------/
+/----[ FRAMES ]------------------------*/
+* {
+    scroll-snap-type: y proximity;
+}
+
+section {
+    height: 100%;
+    scroll-snap-align: start;
+}
+
+/*---.________.-------------------------/
+/----[ HEADER ]------------------------*/
+header {
+    position: fixed;
+    top: 0px;
+    left: 0%;
+    
+    width: 100%;
+    height: auto;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    z-index: 10;
+}
+#fake_header {
+    width: 100%;
+    height: 60px;
+ 
+    z-index: 9;
+}
+nav {
+    width: 60%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;   
+}
+nav a{
+    width: 20%;
+    font-size: 1.5em;
+    text-align: center;
+}
+nav a:hover:before {
+    content: "[ ";
+}
+
+nav a:hover:after {
+    content: " ]";
+}
+
+
+/*---.__________.-------------------------/
+/----[ FRAMES 1 ]------------------------*/
+#one {
+    
+}
+
+#introduction_box {
+    width: 40%;
+    height: 70%;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+
+#introduction_box h1 {
+    font-size: 2.5em;
+    margin: 0%;
+}
+
+#introduction_box h2 {
+    margin-top: 0%;
+    margin-left: 7%;
+}
+
+#introduction_box p {
+    margin-left: 7%;
+}
+
+/*---.__________.-------------------------/
+/----[ FRAMES 2 ]------------------------*/
+#two {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#project_option_box {
+    width: 40%;
+    height: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0%;
+}
+#options {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 80%;
+}
+#options div {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.circle_button,.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+}
+.circle_button {
+    position: relative;
+    z-index: 5;
+}
+.line {
+    position: absolute;
+    width: 20vw;
+    
+    left: 0px;
+    height: 10px;
+    z-index: 1;
+    background-color: #738B75;
+}
+
+.circle_button h3 {
+    margin: 0;
+    margin-left: 350%;
+    height: 100%;
+    font-size: 2em;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: left;
+    user-select: none;
+
+}
+.circle_button h3:hover:before {
+    content: "[ ";
+}
+.circle_button h3:hover:after {
+    content: " ]";
+}
+
+#project_display_box {
+    width: 40%;
+    height: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#project_display {
+    
+    height: 100%;
+    aspect-ratio: 2 / 3;
+    float: right;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+#project_display p {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#project_display .glowing_button {
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: auto;
+    margin-bottom: 25px;
+}
+
+
+
+.glowing_button {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.glowing_button h3{
+    user-select: none;
+}
+
+
+/*---.__________.-------------------------/
+/----[ FRAMES 3 ]------------------------*/
+#three {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+#three {
+    font-size: 2em;
+}
+#three p {
+    margin-top:0px ;
+    margin-bottom:0px ;
+}
+
