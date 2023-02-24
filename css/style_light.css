@@ -1,0 +1,182 @@
+
+
+/*---.________.-------------------------/
+/----[ FRAMES ]------------------------*/
+section {
+    box-shadow: inset 0px 0px 100px rgb(43, 43, 43,0.75);
+    /* border: 5px solid rgb(0, 0, 0); */
+    box-sizing:border-box;
+}
+
+
+/*---.________.-------------------------/
+/----[ HEADER ]------------------------*/
+header {
+
+    /* background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); */
+}
+#navicon_container {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+nav {
+    /* background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); */
+}
+#fake_header {
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: blur(5px);
+}
+a {
+    color: #f7f7f7;
+}
+nav a {
+    text-decoration: none;
+}
+
+
+
+/*---.__________.-------------------------/
+/----[ FRAMES 1 ]------------------------*/
+#one {
+    /* background-color: rgb(255, 205, 205); */
+    background: url("../img/background_light_1.png");
+}
+
+#introduction_box {
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+
+#introduction_box h1 {
+    font-weight: 700;
+    color: #181818;
+    text-shadow: 5px 5px 5px rgba(122, 246, 130, 0.4);
+    font-family: 'Nova Square', cursive;
+}
+
+#introduction_box h2 {
+    font-family: 'Share Tech', sans-serif;
+}
+
+#navicon{
+    /* background-color: #7AF683; */
+}
+/*---.__________.-------------------------/
+/----[ FRAMES 2 ]------------------------*/
+#two {
+    background: url("../img/background_light_2.png");
+}
+
+.circle_button {
+    background-color: #7AF683;
+
+    box-shadow: 5px 5px 5px rgba(122, 246, 130, 0.4);
+}
+.circle {
+    background-color: #738B75;
+}
+
+.circle_button:hover {
+    background-color: #ECECEC;
+}
+
+
+#project_option_box {
+    background-color: rgba(63, 83, 172, 0);
+}
+
+#project_display_box {
+    background-color: rgba(165, 96, 96, 0);
+}
+
+#project_display h2 {
+    font-size: 2em;
+}
+
+@keyframes project-display-slide-in {
+    from {
+        transform: translate(1000px);
+    }
+    to {
+        transform: translate(0px);
+    }
+}
+@keyframes project-display-hide {
+    from {
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(1000px);
+    }
+}
+@keyframes project-display-slide-reload {
+    0% {
+        transform: translate(0px);
+    }
+    30% {
+        transform: translate(1000px);
+    }
+    60% {
+        transform: translate(1000px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+@keyframes project-display-slide-first-reload {
+    0% {
+        transform: translate(1000px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+#project_display {
+    /* animation-name: project-display-slide-in;
+    animation-fill-mode: backwards;
+    animation-timing-function:ease-out;
+    animation-duration: 0.5s; */
+
+    background: url("../img/border_project_display.png");
+    background-size: cover;
+}
+
+.project_display_reload {
+    animation-name: project-display-slide-reload;
+    animation-fill-mode:backwards;
+    animation-timing-function:ease-in-out;
+    animation-duration: 0.5s;
+}
+.project_display_first_reload {
+    animation-name: project-display-slide-first-reload;
+    animation-fill-mode:backwards;
+    animation-timing-function:ease-in-out;
+    animation-duration: 0.5s;
+}
+
+.project_display_initial {
+    animation-name: project-display-hide;
+    animation-fill-mode:forwards;
+    animation-timing-function:ease-in-out;
+    animation-duration: 0.5s;
+}
+
+
+.glowing_button {
+    background-color: #7AF683;
+    box-shadow: 5px 5px 5px rgba(122, 246, 130, 0.4);
+    color: black;
+}
+.glowing_button h3 {
+    color: black;
+}
+
+/*---.__________.-------------------------/
+/----[ FRAMES 3 ]------------------------*/
+#three {
+    background: url("../img/background_light_3.png");
+}
