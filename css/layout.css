@@ -1,213 +1,68 @@
 
-/*---.________.-------------------------/
-/----[ FRAMES ]------------------------*/
-* {
-    scroll-snap-type: y proximity;
+@keyframes in_boxIn {
+    0% {
+        transform: translate(-1000px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+
+}
+#home {
+    animation-name: in_boxIn;
+    animation-fill-mode: backwards;
+    animation-timing-function:ease-out;
+    animation-duration: 0.5s;
 }
 
-section {
-    height: 100%;
-    scroll-snap-align: start;
+#home {
+    width: 80%;
+    height: 70%;
+
+    margin: auto;
+    margin-top: 10%;
 }
 
-/*---.________.-------------------------/
-/----[ HEADER ]------------------------*/
-header {
-    position: fixed;
-    top: 0px;
-    left: 0%;
-    
-    width: 100%;
-    height: auto;
- 
+
+#home_header {
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    z-index: 10;
+    justify-content: space-between;
 }
-#fake_header {
-    width: 100%;
-    height: 60px;
- 
-    z-index: 9;
-}
-nav {
-    width: 60%;
-    height: 100%;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;   
-}
-nav a{
-    width: 20%;
+#home_header p {
+    margin-left: 50px;
+    margin-right: 50px;
     font-size: 1.5em;
-    text-align: center;
-}
-nav a:hover:before {
-    content: "[ ";
-}
-
-nav a:hover:after {
-    content: " ]";
 }
 
 
-/*---.__________.-------------------------/
-/----[ FRAMES 1 ]------------------------*/
-#one {
-    
+#home_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
 }
 
-#introduction_box {
-    width: 40%;
-    height: 70%;
-    margin-top: 15%;
-    margin-left: 10%;
-}
-
-
-#introduction_box h1 {
-    font-size: 2.5em;
-    margin: 0%;
-}
-
-#introduction_box h2 {
+#home_content * {
     margin-top: 0%;
-    margin-left: 7%;
+    margin-bottom: 0%;
 }
 
-#introduction_box p {
-    margin-left: 7%;
+#home_content h1 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 4em;
 }
-
-/*---.__________.-------------------------/
-/----[ FRAMES 2 ]------------------------*/
-#two {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
+#home_content hr {
+    /* line-height: 5px; */
+    width: 80%;
 }
-
-#project_option_box {
-    width: 40%;
-    height: 70%;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 0%;
-}
-#options {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    align-items: center;
-    height: 80%;
-}
-#options div {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-}
-.circle_button,.circle {
-    width: 70px;
-    height: 70px;
-    border-radius: 40px;
-}
-.circle_button {
-    position: relative;
-    z-index: 5;
-}
-.line {
-    position: absolute;
-    width: 20vw;
-    
-    left: 0px;
-    height: 10px;
-    z-index: 1;
-    background-color: #738B75;
-}
-
-.circle_button h3 {
-    margin: 0;
-    margin-left: 350%;
-    height: 100%;
-    font-size: 2em;
-    white-space: nowrap;
-    vertical-align: middle;
-    text-align: left;
-    user-select: none;
-
-}
-.circle_button h3:hover:before {
-    content: "[ ";
-}
-.circle_button h3:hover:after {
-    content: " ]";
-}
-
-#project_display_box {
-    width: 40%;
-    height: 70%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-#project_display {
-    
-    height: 100%;
-    aspect-ratio: 2 / 3;
-    float: right;
-    margin-right: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;
-}
-
-#project_display p {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-#project_display .glowing_button {
-    margin-left: auto;
-    margin-right: auto;
-
-    margin-top: auto;
-    margin-bottom: 25px;
-}
-
-
-
-.glowing_button {
-    width: 150px;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-}
-.glowing_button h3{
-    user-select: none;
-}
-
-
-/*---.__________.-------------------------/
-/----[ FRAMES 3 ]------------------------*/
-#three {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-}
-#three {
+#home_content h2 {
     font-size: 2em;
 }
-#three p {
-    margin-top:0px ;
-    margin-bottom:0px ;
-}
+#home_content p {
+    font-size: 1.5em;
 
+    padding-left: 25%;
+    padding-right: 25%;
+}
