@@ -1,15 +1,26 @@
 
 
-body {
-    display: flex;
+
+
+
+@keyframes in_leftBoxDrop {
+    0% {
+        transform: translate(0px, -2000px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+
+}
+#left_box {
+    animation-name: in_leftBoxDrop;
+    animation-fill-mode: backwards;
+    animation-timing-function: cubic-bezier(0.04, 0.41, 0.18, 1);
+    animation-duration: 1s;
+
+    /* https://www.cssportal.com/css-cubic-bezier-generator/ */
 }
 
-#left_box {
-    width: 35%;
-}
-#right_box {
-    width: 65%;
-}
 
 #left_box {
     display: flex;

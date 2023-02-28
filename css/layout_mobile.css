@@ -1,0 +1,13 @@
+
+@media only screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    #left_box {
+        width: 100%;
+    }
+    #right_box {
+        width: 100%;
+    }
+}
