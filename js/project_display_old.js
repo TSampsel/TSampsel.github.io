@@ -1,4 +1,13 @@
 let project_education = document.getElementById('project_education');
+let project_word = document.getElementById('project_word');
+let project_game = document.getElementById('project_game');
+let project_musicplayer = document.getElementById('project_musicplayer');
+
+
+let project_display_h2 = document.getElementById('project_display_h2');
+let project_display_p = document.getElementById('project_display_p');
+let project_display = document.getElementById('project_display');
+
 
 project_education.addEventListener('click', async () => {
     project_display_h2.innerText = "Education"
