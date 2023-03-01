@@ -59,6 +59,18 @@ button_projects.addEventListener('click', async () => {
 
     turnOn_tab(project_nav_list);
     turnOff_tab(skills_nav_list);
+
+    let data = jsonData.project[0];
+    console.log(data)
+
+    item_title.innerText = data.title
+    item_desc.innerText = data.desc
+
+    turnOn_button(bi_p_1);
+    turnOff_button(bi_p_2);
+    turnOff_button(bi_p_3);
+    isFirst()
+
 })
 
 button_skills.addEventListener('click', async () => {
@@ -74,6 +86,20 @@ button_skills.addEventListener('click', async () => {
 
     turnOff_tab(project_nav_list);
     turnOn_tab(skills_nav_list);
+
+    let data = jsonData.skills[0];
+    console.log(data)
+
+    item_title.innerText = data.title
+    item_desc.innerText = data.desc
+    //item_image.setAttribute('src', data.image)
+
+    turnOn_button(bi_s_1);
+    turnOff_button(bi_s_2);
+    turnOff_button(bi_s_3);
+    turnOff_button(bi_s_4);
+
+    isFirst()
 })
 
 function turnOff_tab(element){
@@ -146,6 +172,7 @@ bi_s_1.addEventListener('click', async () => {
 
     item_title.innerText = data.title
     item_desc.innerText = data.desc
+    //item_image.setAttribute('src', data.image)
 
     turnOn_button(bi_s_1);
     turnOff_button(bi_s_2);
@@ -160,6 +187,7 @@ bi_s_2.addEventListener('click', async () => {
 
     item_title.innerText = data.title
     item_desc.innerText = data.desc
+    
 
     turnOff_button(bi_s_1);
     turnOn_button(bi_s_2);
@@ -242,46 +270,46 @@ const jsonData = {
         {
             title: "Languages",
             date: "2022 - 2023",
-            image: "../img/decoration_2.png",
+            image: "../img/skills_unity.png",
             desc: "Well versed in Javascript, Lua, C#, and Java."
         },
         {
             title: "React",
             date: "2022 - 2023",
-            image: "../img/decoration_2.png",
-            desc: "I like it"
+            image: "../img/skills_wordpress.png",
+            desc: "I have built 1 complete react application with another in-progress."
         },
         {
             title: "Wordpress",
             date: "2022 - 2023",
-            image: "../img/decoration_2.png",
-            desc: "I work with it"
+            image: "../img/skills_wordpress.png",
+            desc: "I have helped friends and family manage their wordpress websites. an example is bobatea which I administer."
         },
         {
             title: "Programs",
             date: "2022 - 2023",
-            image: "../img/decoration_2.png",
-            desc: "I have used unity and blender for a while"
+            image: "../img/skills_unity.png",
+            desc: "I have years of experience with Unity, blender, and gimp. I also have limited knowledge on photoshop and Illustrator"
         }
     ],
     project: [
         {
-            title: "Wordpad",
+            title: "Notepad",
             date: "2022 - 2023",
-            image: "../img/decoration_2.png",
-            desc: "beep bop cotton eye joe!"
+            image: "../img/project_notepad.png",
+            desc: "A clean and minimalist notepad application i built using Electron.js. As well as the basic functionality for a notepad app, it can also remember your last unsaved session."
         },
         {
-            title: "project 2",
+            title: "Fullstack App",
             date: "2022 - 2023",
-            image: "../img/decoration_2.png",
-            desc: "beep bop cotton eye joe!  ee;emrf"
+            image: "../img/project_azure.png",
+            desc: "A Fullstack application I built with the MERN stack. It will list all the known planets, as well as allow the user to add, modify, or delete them"
         },
         {
-            title: "project 3",
+            title: "Portfolio",
             date: "2022 - 2023",
-            image: "../img/decoration_2.png",
-            desc: "beep bop cotton eye joe 4444!"
+            image: "../img/project_notepad.png",
+            desc: "This portfolio! I created this portfolio in less than 24 hours! Pretty impressive eh?"
         }
     ]
 }
