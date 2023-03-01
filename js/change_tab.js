@@ -271,7 +271,7 @@ const jsonData = {
             title: "Languages",
             date: "2022 - 2023",
             image: "../img/skills_unity.png",
-            desc: "Well versed in Javascript, Lua, C#, and Java."
+            desc: "I started out scripting in LUA on roblox and then eventually moved on to C# on unity before i eventually attended NSCC and learned Javascript, PHP, and Java."
         },
         {
             title: "React",
