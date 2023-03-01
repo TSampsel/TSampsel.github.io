@@ -6,8 +6,25 @@
     }
     #left_box {
         width: 100%;
+        height: 100vh;
     }
     #right_box {
         width: 100%;
+        height: 100vh;
     }
+
+    #false_nav_list {
+        visibility: visible;
+    }
+
+    #nav_list {
+        position: fixed;
+        width: 100vw;
+    }
+
+
+
+
+
+
 }

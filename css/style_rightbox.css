@@ -9,7 +9,7 @@
 }
 
 #project #item_image {
-    background-color: aqua;
+    background-color: rgb(46, 53, 53);
     background-image: url("../img/me2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
