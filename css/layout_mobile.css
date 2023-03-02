@@ -1,4 +1,3 @@
-
 @media only screen and (max-width: 800px) {
     body {
         display: flex;
@@ -16,15 +15,29 @@
     #false_nav_list {
         visibility: visible;
     }
-
     #nav_list {
         position: fixed;
         width: 100vw;
     }
 
+    #left_box_list {
+        margin-top: 10%;
+    }
 
+    #left_box_list h1 {
+        font-size: 3em;
+    }
+    #left_box_list h3 {
+        font-size: 2em;
+    }
 
+    #left_box_list p {
+        font-size: 1.5em;
 
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 30%;
+    }
 
 
 }
