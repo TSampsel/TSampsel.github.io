@@ -65,6 +65,7 @@ button_projects.addEventListener('click', async () => {
 
     item_title.innerText = data.title
     item_desc.innerText = data.desc
+    item_image.style.backgroundImage = `url("${data.image}")`;
 
     turnOn_button(bi_p_1);
     turnOff_button(bi_p_2);
@@ -92,6 +93,7 @@ button_skills.addEventListener('click', async () => {
 
     item_title.innerText = data.title
     item_desc.innerText = data.desc
+    item_image.style.backgroundImage = `url("${data.image}")`;
     //item_image.setAttribute('src', data.image)
 
     turnOn_button(bi_s_1);
@@ -127,12 +129,13 @@ function turnOn_button(element){
 
 
 bi_p_1.addEventListener('click', async () => {
+    console.log("bingbong")
     let data = jsonData.project[0];
     console.log(data)
 
     item_title.innerText = data.title
     item_desc.innerText = data.desc
-
+    item_image.style.backgroundImage = `url("${data.image}")`;
     turnOn_button(bi_p_1);
     turnOff_button(bi_p_2);
     turnOff_button(bi_p_3);
@@ -145,6 +148,7 @@ bi_p_2.addEventListener('click', async () => {
 
     item_title.innerText = data.title
     item_desc.innerText = data.desc
+    item_image.style.backgroundImage = `url("${data.image}")`;
 
     turnOff_button(bi_p_1);
     turnOn_button(bi_p_2);
@@ -159,6 +163,7 @@ bi_p_3.addEventListener('click', async () => {
 
     item_title.innerText = data.title
     item_desc.innerText = data.desc
+    item_image.style.backgroundImage = `url("${data.image}")`;
 
     turnOff_button(bi_p_1);
     turnOff_button(bi_p_2);
@@ -172,6 +177,7 @@ bi_s_1.addEventListener('click', async () => {
 
     item_title.innerText = data.title
     item_desc.innerText = data.desc
+    item_image.style.backgroundImage = `url("${data.image}")`;
     //item_image.setAttribute('src', data.image)
 
     turnOn_button(bi_s_1);
@@ -187,6 +193,7 @@ bi_s_2.addEventListener('click', async () => {
 
     item_title.innerText = data.title
     item_desc.innerText = data.desc
+    item_image.style.backgroundImage = `url("${data.image}")`;
     
 
     turnOff_button(bi_s_1);
@@ -201,6 +208,7 @@ bi_s_3.addEventListener('click', async () => {
 
     item_title.innerText = data.title
     item_desc.innerText = data.desc
+    item_image.style.backgroundImage = `url("${data.image}")`;
 
     turnOff_button(bi_s_1);
     turnOff_button(bi_s_2);
@@ -214,6 +222,7 @@ bi_s_4.addEventListener('click', async () => {
 
     item_title.innerText = data.title
     item_desc.innerText = data.desc
+    item_image.style.backgroundImage = `url("${data.image}")`;
 
     turnOff_button(bi_s_1);
     turnOff_button(bi_s_2);
