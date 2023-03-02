@@ -68,7 +68,7 @@
     text-align: center;
 }
 
-#project #p_item_image {
+#p_item_image {
     /* background-color: antiquewhite; */
     /* background-image: url("../img/me2.jpg"); */
     background-size: cover;
@@ -79,7 +79,7 @@
     width: 100%;
 }
 
-#project #project_bottom_list p {
+#project_bottom_list p {
     text-align: center;
     
     font-size: 2em;

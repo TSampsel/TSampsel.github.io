@@ -43,6 +43,12 @@ button_education.addEventListener('click', async () => {
     turnOn_button(button_education);
     turnOff_button(button_projects);
     turnOff_button(button_skills);
+
+    tab_education.scrollIntoView({
+        block: 'end',
+        behavior: 'smooth',
+        inline: 'center'
+    })
 })
 
 button_projects.addEventListener('click', async () => {
@@ -71,6 +77,12 @@ button_projects.addEventListener('click', async () => {
     turnOff_button(bi_p_2);
     turnOff_button(bi_p_3);
     isFirst()
+
+    tab_project.scrollIntoView({
+        block: 'end',
+        behavior: 'smooth',
+        inline: 'center'
+    })
 
 })
 
@@ -102,6 +114,12 @@ button_skills.addEventListener('click', async () => {
     turnOff_button(bi_s_4);
 
     isFirst()
+
+    tab_project.scrollIntoView({
+        block: 'end',
+        behavior: 'smooth',
+        inline: 'center'
+    })
 })
 
 function turnOff_tab(element){
