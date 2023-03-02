@@ -85,6 +85,7 @@
 #nav_list {
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 10%;
 }
 #nav_list p {
     font-size: 1.3em;
