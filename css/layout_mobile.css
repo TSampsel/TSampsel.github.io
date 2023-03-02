@@ -35,6 +35,10 @@
         font-size: 2em;
     }
 
+    #skills_nav_list {
+        margin-top: 15%;
+    }
+
     #left_box_list p {
         font-size: 1.5em;
 
